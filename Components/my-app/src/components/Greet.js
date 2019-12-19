@@ -1,3 +1,4 @@
+//This is a functional components
 import React from 'react'
 
 // function Greet(){
