@@ -3,9 +3,12 @@ import React, { Component } from 'react'
 
 //state 
 class Message extends Component {
-    constructor() {
-        super()
-        this.state = {
+    constructor(props) {
+        super(props)
+        // this.state = {
+        //     message: this.props.msg
+        // }
+        this.state={
             message: 'Welcom Visitor'
         }
     }
