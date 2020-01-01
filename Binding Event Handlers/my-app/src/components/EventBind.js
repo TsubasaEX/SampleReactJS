@@ -11,6 +11,7 @@ class EventBind extends Component {
         // this.clickHandler=this.clickHandler.bind(this)
     }
 
+    // eventHandler can't access "this" so we need eventHandler Binding
     // clickHandler(){
     //     this.setState({
     //         message:'GoodBye!'
