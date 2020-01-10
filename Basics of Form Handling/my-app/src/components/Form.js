@@ -49,28 +49,31 @@ class Form extends Component {
     }
 
     handleSubmit = event => {
-        alert(`${this.myName} ${this.state.username} ${this.state.comments} ${this.state.topic}`)
+        // alert(`${this.myName} ${this.state.username} ${this.state.comments} ${this.state.topic}`)
+        alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`)
         event.preventDefault()
     }
 
     render() {
+
+        const {username,comments,topic} = this.state
         return (
             <form onSubmit={this.handleSubmit}>
-                <div>
+                {/* <div>
                     <label>MyName</label>
                     <input type="text" value={this.myName} onChange={this.handleMy}></input>
-                </div>
+                </div> */}
                 <div>
                     <label>UserName</label>
-                    <input type="text" value={this.state.username} onChange={this.handleUsernameChange}></input>
+                    <input type="text" value={username} onChange={this.handleUsernameChange}></input>
                 </div>
                 <div>
                     <label>Comments</label>
-                    <textarea value={this.state.comments} onChange={this.handleCommentsChange}></textarea>
+                    <textarea value={comments} onChange={this.handleCommentsChange}></textarea>
                 </div>
                 <div>
                     <label>Topic</label>
-                    <select defaultValue={this.state.topic} onChange={this.state.handleTopicChange}>
+                    <select defaultValue={topic} onChange={this.state.handleTopicChange}>
                         <option value="react">React</option>
                         <option value="angular">Angular</option>
                         <option value="vue">Vue</option>
