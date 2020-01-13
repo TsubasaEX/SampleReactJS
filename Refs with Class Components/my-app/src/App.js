@@ -29,6 +29,7 @@ import FragmentDemo from './components/FragmentDemo'
 import Table from './components/Table';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
 
 const CustomLink = styled(Link)`
   color : red
@@ -37,7 +38,8 @@ const CustomLink = styled(Link)`
 function App() {
   return (
     <div className="App">
-      <RefsDemo />
+      <FocusInput />
+      <RefsDemo/>
     </div>
   );
 }

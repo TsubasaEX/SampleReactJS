@@ -18,7 +18,7 @@ export class RefsDemo extends Component {
         // }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         // if (this.cbRef){   
         //     this.cbRef.focus()
         // }
@@ -26,7 +26,7 @@ export class RefsDemo extends Component {
         console.log(this.inputRef)
     }
 
-    clickHandler = () => {
+    clickHandler() {
         alert(this.inputRef.current.value)
     }
 
