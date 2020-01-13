@@ -26,7 +26,8 @@ export class RefsDemo extends Component {
         console.log(this.inputRef)
     }
 
-    clickHandler() {
+    clickHandler = () => {
+        // this.inputRef.current.focus();
         alert(this.inputRef.current.value)
     }
 
