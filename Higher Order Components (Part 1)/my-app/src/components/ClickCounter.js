@@ -11,9 +11,9 @@ class ClickCounter extends Component {
 
     incrementCount = () => {
         this.setState(
-            preState => {
+            prevState => {
                 return {
-                    count: preState.count + 1
+                    count: prevState.count + 1
                 }
             }
         )
