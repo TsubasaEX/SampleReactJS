@@ -12,7 +12,7 @@ const withCounter = (WrappedComponent,incrementNumber) => {
 
         incrementCount = () => {
             this.setState(
-                (prevState,abd) => {
+                (prevState) => {
                     return {
                         count: prevState.count + incrementNumber
                     }
