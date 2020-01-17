@@ -10,7 +10,8 @@ function App() {
   return (
     <div className="App">
       {/* <ClassMouse/> */}
-      <HookMouse/>
+      {/* <HookMouse/> */}
+      <ClickCounterOne/>
     </div>
   );
 }

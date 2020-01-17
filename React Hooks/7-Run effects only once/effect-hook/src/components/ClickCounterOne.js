@@ -9,6 +9,8 @@ class ClickCounterOne extends Component {
             count: 0,
             name: ''
         }
+
+        this.refText = React.createRef()
     }
 
     componentDidMount() {
@@ -17,6 +19,8 @@ class ClickCounterOne extends Component {
 
     componentDidUpdate(prevProps, prevState) {
         if (this.state.count !== prevState.count) {
+            this.refText.current.innerText= `Clicked ${this.state.count} times`
+            console.log(this.refText.current.innerText)
             console.log('updating document title')
             document.title = `Clicked ${this.state.count} times`
         }
@@ -37,6 +41,9 @@ class ClickCounterOne extends Component {
                 )}>
                     Click {this.state.count} times
                 </button>
+                <div ref={this.refText}>
+                     Text
+                </div>
             </div>
         )
     }
