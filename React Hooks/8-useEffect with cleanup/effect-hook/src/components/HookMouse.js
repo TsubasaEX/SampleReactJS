@@ -18,6 +18,7 @@ export default function HookMouse() {
     // }
     
     //second parameter (empty array) is used to run effect only once.
+    //return a cleanup function to do some cleanups
     useEffect(
         () => {
             console.log('useEffect callede')
