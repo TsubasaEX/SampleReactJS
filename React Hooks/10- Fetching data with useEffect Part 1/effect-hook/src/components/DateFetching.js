@@ -17,9 +17,11 @@ function DateFetching() {
     }, [])
     return (
         <div>
-            {
-                posts.map(post => <li key={post.id}>{post.title}</li>)
-            }
+            <ul>
+                {
+                    posts.map(post => <li key={post.id}>{post.title}</li>)
+                }
+            </ul>
         </div>
     )
 }
