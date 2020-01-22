@@ -9,9 +9,9 @@ function DataFetchingOne() {
 
     useEffect(() => {
         axios.get('https://jsonplaceholder.typicode.com/posts/1')
-            .then(respond => {
+            .then(response => {
                 setLoading(false)
-                setPost(respond.data)
+                setPost(response.data)
                 setError('')
             })
             .catch(error => {
