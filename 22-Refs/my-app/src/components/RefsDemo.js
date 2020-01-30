@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { ThemeConsumer } from 'styled-components'
 
-export class RefsDemo extends Component {
+class RefsDemo extends Component {
     constructor(props) {
         super(props)
 
