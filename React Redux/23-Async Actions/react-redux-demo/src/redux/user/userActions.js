@@ -1,6 +1,6 @@
-import { FETCH_USERS_REQUEST } from "./userTypes.JS"
-import { FETCH_USERS_SUCCESS } from "./userTypes.JS"
-import { FETCH_USERS_FAILURE } from "./userTypes.JS"
+import { FETCH_USERS_REQUEST } from "./userTypes"
+import { FETCH_USERS_SUCCESS } from "./userTypes"
+import { FETCH_USERS_FAILURE } from "./userTypes"
 
 export const fetchUsersRequest = () => {
     return {
